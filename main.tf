@@ -18,8 +18,8 @@ resource "aws_iam_group" "Group" {
 }
 
 resource "aws_iam_group_membership" "example_membership" {
-  name = aws_iam_user.user1.Smit
-  group = aws_iam_group.Group.Kotkar
+  name = aws_iam_user.user1.name
+  group = aws_iam_group.Group.name
 }
 
 resource "aws_iam_policy" "policy" {
@@ -43,5 +43,5 @@ EOF
 resource "aws_iam_policy_attachment" "example_attachment" {
   name       = "example_attachment"
   policy_arn = aws_iam_policy.policy.arn
-  groups     = [aws_iam_group.Group.Kotkar]
+  groups     = [aws_iam_group.Group.name]
 }
