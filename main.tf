@@ -17,7 +17,7 @@ resource "aws_iam_group" "Group" {
   name = "Kotkar"
 }
 
-resource "aws_iam_group_membership" "example1" {
+resource "aws_iam_group_membership" "example_membership" {
   users = aws_iam_user.user1.name
   group = aws_iam_group.Group.name
 }
