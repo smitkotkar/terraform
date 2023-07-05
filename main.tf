@@ -18,7 +18,7 @@ resource "aws_iam_group" "Group" {
 }
 
 resource "aws_iam_group_membership" "example_membership" {
-  name = aws_iam_user.user1.name
+  user = aws_iam_user.user1.name
   group = aws_iam_group.Group.name
 }
 
