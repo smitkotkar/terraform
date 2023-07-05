@@ -23,8 +23,8 @@ resource "aws_iam_group" "Group" {
 
 resource "aws_iam_group_membership" "example_membership" {
   users = [
-    aws_iam_user.user1.name
-    aws_iam_user.user2.name
+    aws_iam_user.user1.name,
+    aws_iam_user.user2.name,
   ]
 
   group = [
