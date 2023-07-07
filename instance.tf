@@ -12,7 +12,7 @@ provider "aws" {
 
 
 resource "aws_instance" "my-instance" {
-    ami = "ami-006935d9a6773e4ec"
+    ami = "ami-0d1c47ab964ae2b87"
     key_name = "ohio"
     instance_type = "t2.micro"
     vpc_security_group_ids = [ aws_security_group.my-sg.id ]
