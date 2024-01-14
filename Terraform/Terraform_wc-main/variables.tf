@@ -1,5 +1,5 @@
 variable "AWS_REGION" {
-    default = "us-west-2"
+    default = "us-east-1"
 }
 
 variable "AMI" {
@@ -7,7 +7,7 @@ variable "AMI" {
 
     default = {
         us-west-2 = "ami-0d593311db5abb72b"
-        us-east-1 = "ami-0c2a1acae6667e438"
+        us-east-1 = "ami-0c0b74d29acd0cd97"
     }
 }
 
